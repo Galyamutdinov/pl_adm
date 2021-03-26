@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/adm.css">
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<title>Prime_Lunch_adm</title>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="title"><img src="css/logo.png" style="width: 100px;"/></div></br></br>
+	<input class="button" style="width: 420px; box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.22);" type="button" value="ДОБАВИТЬ ЭКРАН" onClick = "createScreen();"/>
+	</br>
+	<div id="main">
+		<div class="area" id="screen1" style="z-index: 99;"><b>ЭКРАН 1:</b>&nbsp&nbsp&nbsp<input type="text" id="1h" size="30" class="screen_title"/></br></br>
+			<div class="item">Позиция 1 &nbsp<input type="text" id="1a" size="40" value="-"/></div>
+			<div class="item">Позиция 2 &nbsp<input type="text" id="2a" size="40" value="-"/></div>
+			<div class="item">Позиция 3 &nbsp<input type="text" id="3a" size="40" value="-"/></div>
+			<div class="item">Позиция 4 &nbsp<input type="text" id="4a" size="40" value="-"/></div></br>
+			<input id="scr_pub_1" class="button" type="button" value="ОПУБЛИКОВАТЬ" onClick = "sendData('1h');sendData('1a');sendData('2a');sendData('3a');sendData('4a');">
+		</div>
+	</div>
+</body>
+<script src="js/prime_lunch.js"></script>
+</html>
