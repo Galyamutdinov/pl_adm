@@ -1,0 +1,11 @@
+# Authentication type
+AuthType Basic
+# Name of area authentication will be used for (aka realm)
+AuthName "prime"
+
+# Authentication provider. Here - mod_authn_file
+AuthBasicProvider file
+# Info for mod_authn_file - path to password file
+AuthUserFile h:\root\home\galyamutdinov-001\www\db\.htpasswds
+# Access will be granted to all authenticated users
+Require valid-user
